@@ -21,6 +21,9 @@ label {
     background-color: #888a89;
     border: 1px solid #6f212f;
 }
+#footer {
+    text-align:center;
+}
 h1 {
     color: #0e4dfc;
     margin: 10px 0 20px 0;
