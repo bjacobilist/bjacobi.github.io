@@ -277,7 +277,7 @@ if (arrayLength > 0)
 //Week 14 Remove Share Button and Sharelist if arraylist contains values 
   document.getElementById("sharebutton").innerHTML = ' ';
     document.getElementById("sharelist").innerHTML = ' ';
-	document.getElementById("Empty").innerHTML = '\n DONE Yippee! Nothing to do!';
+	document.getElementById("Empty").innerHTML = '\n DONE Yippee!! Nothing to do!';
     }
 }
 
@@ -303,11 +303,11 @@ if (arrayLength > 0)
 {
   document.getElementById("labels").innerHTML = 'Completed';
   document.getElementById("MyCart").innerHTML = '<ul>' + TheList + '</ul>';
-	document.getElementById("Empty").innerHTML = ' ';
+	
 }else{
   document.getElementById("labels").innerHTML = '';
   document.getElementById("MyCart").innerHTML = '';
-   document.getElementById("Empty").innerHTML = '';
+
 }
 }
 
