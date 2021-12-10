@@ -265,13 +265,7 @@ TheRow = '<li>' + shoppinglist[i] + btndelete + ' '  + btnaddcart + '</li>';
 TheList += TheRow;
 }
 //v3.1 add Title
-if (3 > arrayLength > 0)
-{
-  document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
-//Week 14 Add Share Button if arraylist contains values 
-  document.getElementById("sharebutton").innerHTML = btnsharelist;
-  document.getElementById("Empty").innerHTML = 'Almost there! Keep Working';
-}else if (3 > arrayLength)
+if (0 > arrayLength)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
 //Week 14 Add Share Button if arraylist contains values 
