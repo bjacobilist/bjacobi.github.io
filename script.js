@@ -1,6 +1,6 @@
 //v3.4 Add popup describing app when visitors load webpage the first time
 window.onload = function() {
-    alert("Welcome to 'Your To-Do List' App!\nKeep track of your tasks and add them to the 'Completed' section when finished! Click the 'Share' button to share your list with someone.\nCreated by Brynn Jacobi\n**Javascript(Web233) Student**\n\nQuestions?\nemail Brynn Jacobi\ns0494581@student.rockvalleycollege.edu\n");
+    alert("Welcome to 'Your To-Do List' App!\nKeep track of your tasks and add them to the 'Completed' section when finished! Click the 'Share' button to share your list with someone.\nCreated by Brynn Jacobi\n\nQuestions?\nemail Brynn Jacobi\ns0494581@student.rockvalleycollege.edu\n");
     populateshoppinglistonload();
     displayShoppinglists();
     clearFocus();
@@ -69,7 +69,7 @@ function copyToClipboard(text) {
 
 function about()
 {
-    alert("Welcome to 'To Do List' App!\nKeep track of your tasks and add them to the 'Completed' section when finished! Click the 'Share' button to share your list with someone.\nCreated by Brynn Jacobi\n**Javascript(Web233) Student**\n\nQuestions?\nemail Brynn Jacobi\ns0494581@student.rockvalleycollege.edu\n");
+    alert("Welcome to 'To Do List' App!\nKeep track of your tasks and add them to the 'Completed' section when finished! Click the 'Share' button to share your list with someone.\nCreated by Brynn Jacobi\n\nQuestions?\nemail Brynn Jacobi\ns0494581@student.rockvalleycollege.edu\n");
     
 }
 //read cookie and return
@@ -265,12 +265,15 @@ TheRow = '<li>' + shoppinglist[i] + btndelete + ' '  + btnaddcart + '</li>';
 TheList += TheRow;
 }
 //v3.1 add Title
-if (arrayLength > 0)
+if (3 > arrayLength)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
 //Week 14 Add Share Button if arraylist contains values 
   document.getElementById("sharebutton").innerHTML = btnsharelist;
 	document.getElementById("Empty").innerHTML = ' ';
+}else if (3 > arrayLength > 0)
+{
+document.getElementById("Empty").innerHTML = 'Almost there! Keep Working';
 }else
 {
   document.getElementById("MyList").innerHTML = ' ';
@@ -279,7 +282,7 @@ if (arrayLength > 0)
     document.getElementById("sharelist").innerHTML = ' ';
 	document.getElementById("Empty").innerHTML = '\n DONE Yippee!! Nothing to do!';
     }
-}
+
 
 //v3.1
 function displayShoppingCart() {
