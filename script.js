@@ -279,6 +279,7 @@ if (0 > arrayLength)
     document.getElementById("sharelist").innerHTML = ' ';
 	document.getElementById("Empty").innerHTML = '\n DONE Yippee!! Nothing to do!';
     }
+}
 
 
 //v3.1
