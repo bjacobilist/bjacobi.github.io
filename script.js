@@ -270,6 +270,7 @@ if (arrayLength > 0)
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
 //Week 14 Add Share Button if arraylist contains values 
   document.getElementById("sharebutton").innerHTML = btnsharelist;
+	document.getElementById("Empty").innerHTML = ' ';
 }else
 {
   document.getElementById("MyList").innerHTML = ' ';
