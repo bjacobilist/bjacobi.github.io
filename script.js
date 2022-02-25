@@ -1,6 +1,6 @@
 //v3.4 Add popup describing app when visitors load webpage the first time
 window.onload = function() {
-    alert("Welcome to 'Your To-Do List' App!\nKeep track of your tasks and add them to the 'Completed' section when finished! Click the 'Share' button to share your list with someone.\nCreated by Brynn Jacobi\n\nQuestions?\nemail Brynn Jacobi\ns0494581@student.rockvalleycollege.edu\n");
+    //alert("Welcome to 'Your To-Do List' App!\nKeep track of your tasks and add them to the 'Completed' section when finished! Click the 'Share' button to share your list with someone.\nCreated by Brynn Jacobi\n\nQuestions?\nemail Brynn Jacobi\ns0494581@student.rockvalleycollege.edu\n");
     populateshoppinglistonload();
     displayShoppinglists();
     clearFocus();
